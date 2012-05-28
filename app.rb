@@ -3,6 +3,7 @@ require 'net/http'
 require 'nokogiri'
 require 'json'
 require 'sequel'
+require 'mysql'
 
 DB = Sequel.connect(ENV['DATABASE_URL'] || 'mysql://root:@127.0.0.1:3306/trainsharing')
 
